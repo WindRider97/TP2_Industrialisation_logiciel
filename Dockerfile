@@ -1,13 +1,5 @@
 FROM python:3.9
 
-FROM alpine
-
-RUN addgroup -S nonroot && adduser -S nonroot -G nonroot
-
-USER nonroot
-
-ENTRYPOINT ["id"]
-
 WORKDIR /code
 
 COPY ./setup.py /code/setup.py
