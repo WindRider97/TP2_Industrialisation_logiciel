@@ -38,3 +38,4 @@ A malicious user can run code on a system either thanks to actions that could be
 Suppose the container is not hardened to prevent using a shell, interpreter, or Linux capabilities. In this case, the malicious user can read and exfiltrate any file (including from Docker volumes), open new network connections, install malicious software, or, worse, break out of the container’s isolation context by exploiting other components.
 
 Depending on the infrastructure’s resilience, attackers may then extend their attack to other services, such as Kubernetes clusters or cloud providers, in order to maximize their reach.
+
